@@ -51,8 +51,8 @@
         devShells.default = pkgs.mkShell {
           name = "rest.nvim devShell";
           shellHook = ''
-            export LUA_PATH="$(luarocks path --lr-path --lua-version 5.1 --local)"
-            export LUA_CPATH="$(luarocks path --lr-cpath --lua-version 5.1 --local)"
+            export LUA_PATH="$(luarocks path --lr-path --lua-version 5.4 --local)"
+            export LUA_CPATH="$(luarocks path --lr-cpath --lua-version 5.4 --local)"
             export TREE_SITTER_HTTP_PLUGIN_DIR=${pkgs.tree-sitter-http-plugin}
             export REST_NVIM_PLUGIN_DIR=${pkgs.rest-nvim-dev}
           '';
