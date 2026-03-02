@@ -8,4 +8,4 @@ format:
 	stylua .
 
 test:
-	luarocks test --local --lua-version 5.1 --dev
+	luarocks test --local --lua-version 5.4 --dev
